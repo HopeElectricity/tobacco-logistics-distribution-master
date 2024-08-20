@@ -1,0 +1,40 @@
+// 字体
+@font-face {
+    font-family: "font";
+    src: url("@/assets/font/LianMengQiYiLuShuaiZhengRuiHeiTi-2.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    align-self: start;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif, ”宋体”;
+    color: #e1f7ff;
+}
+
+@import "./global.scss";

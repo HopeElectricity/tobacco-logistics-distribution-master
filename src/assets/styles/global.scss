@@ -1,0 +1,65 @@
+.round {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    &.notProcessed {
+        background-color: $notProcessed; 
+    }
+
+    &.processed {
+        background-color: $processed;
+    }
+
+    &.dispose {
+        background-color: $dispose;
+    }
+
+    &.notDispose {
+        background-color: $notDispose;
+    }
+
+    &.all{
+        background-color: #041c3f;
+        border: 1px solid $processed;
+    }
+    &.sRound {
+        width: 10px;
+        height: 10px;
+        margin: 0px 10px;
+    }
+}
+
+.vertical {
+
+    /* 防止文字换行 */
+    width: 1em;
+    height: 100px !important;
+    font-size: 20px !important;
+
+    /* 调整按钮宽度以适应竖排文字 */
+    >span {
+        writing-mode: vertical-rl;
+        /* 竖排文字从右向左 */
+        text-orientation: mixed;
+        /* 保持文字正常的字母排列方向 */
+        white-space: nowrap !important;
+    }
+}
+.map {
+    position: fixed;
+    width: 49%;
+    height: 75vh;
+    z-index: 0;
+
+    .btns {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -8%;
+        .saveRoute{
+            margin-left: 3vw;
+        }
+    }
+}
