@@ -8,7 +8,7 @@
 import { ElConfigProvider } from "element-plus";
 import { zhCn } from "element-plus/es/locale/index.mjs";
 import "@/types/components.d.ts"
-// 12
+// 123
 </script>
 
 <style scoped></style>
